@@ -50,7 +50,7 @@ public static void mainTest() {
 
             // Open Google
             driver.get("https://google.com/");
-            System.out.println(" Done with Jenkins CI");
+            System.out.println(" Done with Jenkins CI test");
         }
     }
 }
