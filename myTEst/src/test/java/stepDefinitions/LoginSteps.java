@@ -49,7 +49,7 @@ public class LoginSteps {
 
             // Open Google
             driver.get("https://google.com/");
-            System.out.println(" Done with Jenkins CI - Given step driver initialization");
+            System.out.println(" Done with Jenkins CI - Given step driver initialization 2");
         }
     }
 
