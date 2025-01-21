@@ -12,6 +12,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import io.cucumber.java.en.*;
 
 public class LoginSteps {
+	WebDriver driver;
+	@Then("Close browser")
+    public void CloseBrowser() { 
+		driver.quit();
+	}
+	
     @Given("the user is on the login page")
     public void theUserIsOnTheLoginPage() {       
     	// Setup WebDriverManager to manage ChromeDriver
@@ -30,7 +36,7 @@ public class LoginSteps {
         options.setExperimentalOption("prefs", prefs);
 
         // Initialize ChromeDriver with the options
-        WebDriver driver = null;
+        driver = null;
         try {
             driver = new ChromeDriver(options);
         } catch (Exception e) {
