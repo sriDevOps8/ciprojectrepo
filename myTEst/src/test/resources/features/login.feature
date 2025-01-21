@@ -17,8 +17,16 @@
 ## (Comments)
 #Sample Feature Definition Template
 Feature: User Login
-
-  Scenario: Successful login with valid credentials
+  @S1 @smoke
+  Scenario: Successful login with valid credentials S1
     Given the user is on the login page
     When the user enters valid username and password
     Then the user should be redirected to the homepage
+    Then Close browser
+    
+    @S2 @smoke
+  Scenario: Successful login with valid credentials S2
+    Given the user is on the login page
+    When the user enters valid username and password
+    Then the user should be redirected to the homepage
+    Then Close browser
